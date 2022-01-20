@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/zero/Desktop/TeamUp/app/src/main/res/drawable/post_corner.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/zero/Desktop/TeamUp/app/src/main/res/layout-v17/activity_post_details.xml" value="0.209375" />
+        <entry key="..\:/Users/zero/Desktop/TeamUp/app/src/main/res/layout-v17/activity_prev_partners.xml" value="0.209375" />
+        <entry key="..\:/Users/zero/Desktop/TeamUp/app/src/main/res/layout-v17/content_post_details.xml" value="0.2" />
+        <entry key="..\:/Users/zero/Desktop/TeamUp/app/src/main/res/layout-v17/content_prev_parners.xml" value="0.209375" />
+        <entry key="..\:/Users/zero/Desktop/TeamUp/app/src/main/res/layout-v17/content_project_page1.xml" value="0.2" />
+        <entry key="..\:/Users/zero/Desktop/TeamUp/app/src/main/res/layout-v17/content_project_page2.xml" value="0.22" />
+        <entry key="..\:/Users/zero/Desktop/TeamUp/app/src/main/res/layout-v17/content_project_page3.xml" value="0.209375" />
+        <entry key="..\:/Users/zero/Desktop/TeamUp/app/src/main/res/layout-v17/item_my_posts.xml" value="0.22" />
+        <entry key="..\:/Users/zero/Desktop/TeamUp/app/src/main/res/layout-v17/item_post.xml" value="0.209375" />
+        <entry key="..\:/Users/zero/Desktop/TeamUp/app/src/main/res/layout-v17/my_requesrs.xml" value="0.209375" />
+        <entry key="..\:/Users/zero/Desktop/TeamUp/app/src/main/res/layout/activity_screen.xml" value="0.12681159420289856" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

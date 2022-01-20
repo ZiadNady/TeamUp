@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.LawActivity"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- إن فريق عمل برنامج (Team Up) ليست له اية علاقة بأي حالات إنتحال شخصية او انتحال  اسم شركة او نصب و إننا نخلي مسؤوليتنا القانونية في حالة حدوث ذلك و لا نضمن مدي جدية ناشر المشروع او المتقدمين إليه."
+        android:padding="30dp"
+        android:textSize="24sp"
+        android:layoutDirection="rtl"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- إن السن القانونية لإستخدام هذا التطبيق هو 18 سنة و إذا كان اقل يجب ان يكون تحت رقابة الوالدين و تحت مسؤوليتها الشخصية."
+        android:padding="30dp"
+        android:textSize="24sp"
+        android:layoutDirection="rtl"
+        android:textColor="@android:color/black"/>
+</LinearLayout>

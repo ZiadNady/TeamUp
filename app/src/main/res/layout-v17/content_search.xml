@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.search.SearchActivity"
+    android:background="@color/colorPrimary"
+    tools:showIn="@layout/activity_search">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/layout_background"
+                android:padding="10dp"
+                android:layout_margin="15dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="التصنيف :"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="#000000"/>
+                    <Spinner
+                        android:id="@+id/searchCategory"
+                        android:layout_weight="0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="اسم المشروع :"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="#000000"/>
+                    <EditText
+                        android:id="@+id/searchProjectName"
+                        android:singleLine="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:background="@drawable/square_text"
+                        android:padding="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:textColorHint="#000000"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="عدد المشاركين من  "
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="#000000"/>
+                    <EditText
+                        android:id="@+id/searchPartnersNumFrom"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/square_text"
+                        android:layout_marginRight="5dp"
+                        android:padding="5dp"
+                        android:textSize="20sp"
+                        android:textColorHint="#000000"
+                        android:digits="0123456789"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:maxLength="2"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="إلي"
+                        android:textStyle="bold"
+                        android:layout_marginRight="5dp"
+                        android:textSize="20sp"
+                        android:textColor="#000000"
+                        android:digits="0123456789"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:maxLength="2"/>
+                    <EditText
+                        android:id="@+id/searchPartnersNumTo"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/square_text"
+                        android:padding="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textSize="20sp"
+                        android:textColorHint="#000000"
+                        android:digits="0123456789"
+                        android:maxLength="2"
+                        android:singleLine="true"
+                        android:inputType="number"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="اعمار المشاركين من سن  "
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="#000000"/>
+                    <EditText
+                        android:id="@+id/searchPartnersAgeFrom"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/square_text"
+                        android:layout_marginRight="5dp"
+                        android:padding="5dp"
+                        android:textSize="20sp"
+                        android:maxLength="2"
+                        android:singleLine="true"
+                        android:textColorHint="#000000"
+                        android:digits="0123456789"
+                        android:inputType="number"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="إلي"
+                        android:textStyle="bold"
+                        android:layout_marginRight="5dp"
+                        android:textSize="20sp"
+                        android:textColor="#000000"
+                        android:digits="0123456789"
+                        android:inputType="number"/>
+                    <EditText
+                        android:id="@+id/searchPartnersAgeTo"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/square_text"
+                        android:padding="5dp"
+                        android:maxLength="2"
+                        android:singleLine="true"
+                        android:layout_marginRight="5dp"
+                        android:textSize="20sp"
+                        android:textColorHint="#000000"
+                        android:digits="0123456789"
+                        android:inputType="number"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="مكان المشروع :"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="#000000"/>
+                    <Spinner
+                        android:layout_weight="1"
+                        android:id="@+id/searchProjectPlaceCountry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="دولة"
+                        android:padding="5dp"
+                        android:textColorHint="#000000"/>
+                    <Spinner
+                        android:layout_weight="1"
+                        android:id="@+id/SearchProjectPlaceTeratory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="محافظة"
+                        android:padding="5dp"
+                        android:layout_marginRight="10dp"
+                        android:textColorHint="#000000"/>
+                </LinearLayout>
+    <!--            <LinearLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:paddingTop="10dp"-->
+    <!--                android:orientation="horizontal">-->
+    <!--                <TextView-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:text="مكان إقامة المشاركين :"-->
+    <!--                    android:textSize="20sp"-->
+    <!--                    android:textColor="#000000"/>-->
+    <!--                <EditText-->
+    <!--                    android:layout_weight="1"-->
+    <!--                    android:id="@+id/searchPartnersPlaceCountry"-->
+    <!--                    android:singleLine="true"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:hint="دولة"-->
+    <!--                    android:background="@drawable/square_text"-->
+    <!--                    android:padding="5dp"-->
+    <!--                    android:textColorHint="#000000"/>-->
+    <!--                <EditText-->
+    <!--                    android:layout_weight="1"-->
+    <!--                    android:id="@+id/searchPartnersPlaceTeratory"-->
+    <!--                    android:singleLine="true"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:hint="محافظة"-->
+    <!--                    android:background="@drawable/square_text"-->
+    <!--                    android:padding="5dp"-->
+    <!--                    android:layout_marginRight="10dp"-->
+    <!--                    android:textColorHint="#000000"/>-->
+    <!--            </LinearLayout>-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="القيمة المادية لتكلفة إنشاء المشروع بدون حساب تكلفة التشغيل"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#000000"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="من"
+                        android:textStyle="bold"
+                        android:layout_marginRight="5dp"
+                        android:textSize="20sp"
+                        android:textColor="#000000"
+                        android:digits="0123456789"
+                        android:inputType="number"/>
+                    <EditText
+                        android:layout_weight="1"
+                        android:id="@+id/searchProjectCostFrom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/square_text"
+                        android:layout_marginRight="5dp"
+                        android:padding="5dp"
+                        android:maxLength="9"
+                        android:singleLine="true"
+                        android:textSize="20sp"
+                        android:textColorHint="#000000"
+                        android:digits="0123456789"
+                        android:inputType="number"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="إلي"
+                        android:textStyle="bold"
+                        android:layout_marginRight="5dp"
+                        android:textSize="20sp"
+                        android:textColor="#000000"
+                        android:digits="0123456789"
+                        android:inputType="number"/>
+                    <EditText
+                        android:layout_weight="1"
+                        android:id="@+id/searchProjectCostTo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/square_text"
+                        android:padding="5dp"
+                        android:maxLength="9"
+                        android:singleLine="true"
+                        android:layout_marginRight="5dp"
+                        android:textSize="20sp"
+                        android:textColorHint="#000000"
+                        android:digits="0123456789"
+                        android:inputType="number"/>
+                </LinearLayout>
+                <!--            <LinearLayout-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:paddingTop="10dp"-->
+                <!--                android:orientation="horizontal">-->
+                <!--                <TextView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="القيمة المادية للمساهمة في المشروع "-->
+                <!--                    android:textSize="20sp"-->
+                <!--                    android:textColor="#000000"/>-->
+                <!--            </LinearLayout>-->
+                <!--            <LinearLayout-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:paddingTop="10dp"-->
+                <!--                android:orientation="horizontal">-->
+                <!--                <TextView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="من "-->
+                <!--                    android:textSize="20sp"-->
+                <!--                    android:textColor="#000000"/>-->
+                <!--                <EditText-->
+                <!--                    android:layout_width="60dp"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:background="@drawable/square_text"-->
+                <!--                    android:layout_marginRight="5dp"-->
+                <!--                    android:padding="5dp"-->
+                <!--                    android:textSize="20sp"-->
+                <!--                    android:textColorHint="#000000"-->
+                <!--                    android:digits="0123456789"-->
+                <!--                    android:inputType="number"/>-->
+                <!--                <TextView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="إلي"-->
+                <!--                    android:layout_marginRight="5dp"-->
+                <!--                    android:textSize="20sp"-->
+                <!--                    android:textColor="#000000"-->
+                <!--                    android:digits="0123456789"-->
+                <!--                    android:inputType="number"/>-->
+                <!--                <EditText-->
+                <!--                    android:layout_width="60dp"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:background="@drawable/square_text"-->
+                <!--                    android:padding="5dp"-->
+                <!--                    android:layout_marginRight="5dp"-->
+                <!--                    android:textSize="20sp"-->
+                <!--                    android:textColorHint="#000000"-->
+                <!--                    android:digits="0123456789"-->
+                <!--                    android:inputType="number"/>-->
+                <!--            </LinearLayout>-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="نوع الشركاء :"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="#000000"/>
+                    <RadioGroup
+                        android:id="@+id/searchGender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginRight="15dp">
+                        <RadioButton
+                            android:id="@+id/searchMale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ذكر"
+                            android:textSize="20sp" />
+                        <RadioButton
+                            android:id="@+id/searchFemale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="انثي"
+                            android:textSize="20sp"/>
+                        <RadioButton
+                            android:id="@+id/searchBoth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="النوعين"
+                            android:textSize="20sp"/>
+                    </RadioGroup>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="المستوي التعليمي للشركاء :"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+                    <RadioGroup
+                        android:id="@+id/searchPartnersEducation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <RadioButton
+                            android:id="@+id/searchUnderMid"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="تحت المتوسط"
+                            android:textSize="15sp" />
+                        <RadioButton
+                            android:id="@+id/searchMid"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="متوسط"
+                            android:textSize="15sp"/>
+                        <RadioButton
+                            android:id="@+id/searchhigh"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="عالي"
+                            android:textSize="15sp"/>
+                        <RadioButton
+                            android:id="@+id/searchNothing"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="لا يهم المستوي التعليمي"
+                            android:textSize="15sp"/>
+                    </RadioGroup>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="عدد سنوات الخبرة من  "
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="#000000"/>
+                    <EditText
+                        android:id="@+id/searchTechnicalExperienceFrom"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/square_text"
+                        android:layout_marginRight="5dp"
+                        android:padding="5dp"
+                        android:maxLength="2"
+                        android:singleLine="true"
+                        android:textSize="20sp"
+                        android:textColorHint="#000000"
+                        android:digits="0123456789"
+                        android:inputType="number"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="إلي"
+                        android:textStyle="bold"
+                        android:layout_marginRight="5dp"
+                        android:textSize="20sp"
+                        android:textColor="#000000"
+                        android:digits="0123456789"
+                        android:inputType="number"/>
+                    <EditText
+                        android:id="@+id/searchTechnicalExperienceTo"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/square_text"
+                        android:padding="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textSize="20sp"
+                        android:maxLength="2"
+                        android:singleLine="true"
+                        android:textColorHint="#000000"
+                        android:digits="0123456789"
+                        android:inputType="number"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="العملة المتداولة :"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="#000000"/>
+                    <Spinner
+                        android:id="@+id/currency"
+                        android:layout_weight="0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="الارباح من  "
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="#000000"/>
+                    <EditText
+                        android:id="@+id/expectedProfitFrom"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/square_text"
+                        android:layout_marginRight="5dp"
+                        android:padding="5dp"
+                        android:textSize="20sp"
+                        android:maxLength="9"
+                        android:singleLine="true"
+                        android:textColorHint="#000000"
+                        android:digits="0123456789"
+                        android:inputType="number"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="إلي"
+                        android:textStyle="bold"
+                        android:layout_marginRight="5dp"
+                        android:textSize="20sp"
+                        android:textColor="#000000"
+                        android:digits="0123456789"
+                        android:inputType="number"/>
+                    <EditText
+                        android:id="@+id/expectedProfitTo"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/square_text"
+                        android:padding="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textSize="20sp"
+                        android:maxLength="9"
+                        android:singleLine="true"
+                        android:textColorHint="#000000"
+                        android:digits="0123456789"
+                        android:inputType="number"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="تاريخ نشر المشروع "
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="#000000"/>
+                    <Spinner
+                        android:id="@+id/searchProjectPublishMonth"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:hint="شهر"
+                        android:padding="5dp"
+                        android:textSize="20sp"
+                        android:textColorHint="#000000"
+                        android:digits="0123456789"
+                        android:inputType="number"/>
+                    <Spinner
+                        android:id="@+id/searchProjectPublishYear"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:hint="سنة"
+                        android:padding="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textSize="20sp"
+                        android:textColorHint="#000000"
+                        android:digits="0123456789"
+                        android:inputType="number"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="التاريخ المتوقع لبدأ المشروع  "
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:orientation="horizontal">
+                    <Spinner
+                        android:id="@+id/searchProjectStartMonth"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:hint="شهر"
+                        android:layout_marginRight="5dp"
+                        android:padding="5dp"
+                        android:textSize="20sp"
+                        android:textColorHint="#000000"
+                        android:digits="0123456789"
+                        android:inputType="number"/>
+                    <Spinner
+                        android:id="@+id/searchProjectStartYear"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:hint="سنة"
+                        android:padding="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textSize="20sp"
+                        android:textColorHint="#000000"
+                        android:digits="0123456789"
+                        android:inputType="number"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                >
+                <Button
+                    android:id="@+id/searchButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="بحث"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:background="@color/white"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Team Up</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="web_client_id">156409077733-mb22g8jua6gtk8e324io1cnvjlk3rpum.apps.googleusercontent.com</string>
+
+    <string name="facebook_app_id">620631365542466</string>
+    <string name="fb_login_protocol_scheme">fb620631365542466</string>
+
+
+    <string name="menu_home">الصفحة الرئيسية</string>
+    <string name="menu_gallery">مشاريعى و طلبات الإنضمام</string>
+    <string name="menu_slideshow">مشاريع تقدمت إليها</string>
+    <string name="menu_tools">بيانات المستخدم</string>
+    <string name="menu_share">أضف مشروعك</string>
+    <string name="menu_send">تسجيل الخروج</string>
+    <string name="menu_likes">إعجاباتى</string>
+    <string name="title_activity_project_page1">projectPage1Activity</string>
+    <string name="title_activity_project_page2">ProjectPage2Activity</string>
+    <string name="title_activity_project_page3">ProjectPage3Activity</string>
+    <string name="title_activity_posts">PostsActivity</string>
+    <string name="title_activity_custom_adapter">customAdapter</string>
+    <string name="title_activity_post_details">تفاصيل المشروع</string>
+    <string name="title_activity_partners">طلبات الإنضمام</string>
+    <string name="title_activity_partner_form">PartnerFormActivity</string>
+    <string name="title_activity_search">محرك بحث المشاريع</string>
+    <string name="title_activity_search_result">SearchResultActivity</string>
+    <string name="title_activity_full_your_data">Full your data</string>
+    <string name="title_activity_edit_profile">EditProfileActivity</string>
+    <string name="title_activity_prev_parners">تفاصيل المشروع</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_accepted_partners">اشخاص تم قبولهم</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="login">Login</string>
+</resources>

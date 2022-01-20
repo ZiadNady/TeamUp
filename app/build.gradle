@@ -1,0 +1,99 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.aboelnour.teamup"
+        minSdkVersion 16
+        targetSdkVersion 30
+        versionCode 28
+        versionName "1"
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.debug
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+
+    //FirebaseAuth
+    implementation platform('com.google.firebase:firebase-bom:26.4.0')
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+
+    //Firebase Database
+    implementation 'com.google.firebase:firebase-database:20.0.0'
+    //Circle imageView
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    //Firebase Facebook SignUp
+    implementation 'com.facebook.android:facebook-android-sdk:5.15.3'
+    //Firebase Storage
+    implementation 'com.google.firebase:firebase-storage:20.0.0'
+    //FirebaseDynamicLink
+    implementation 'com.google.firebase:firebase-dynamic-links:20.1.0'
+    //cardView
+    implementation 'androidx.cardview:cardview:1.0.0'
+    //github picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    //facebook
+    implementation 'com.facebook.android:facebook-android-sdk:5.15.3'
+    implementation 'com.facebook.android:facebook-share:5.15.3'
+    //navigation
+    implementation 'androidx.navigation:navigation-fragment:2.3.5'
+    implementation 'androidx.navigation:navigation-ui:2.3.5'
+    //firebase analytics
+    implementation 'com.google.firebase:firebase-analytics:19.0.0'
+    //RecyclerView
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    //SwipeRefreshLayout
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    //pagination
+    implementation "android.arch.paging:runtime:1.0.1"
+    //firebaseStore
+    implementation 'com.google.firebase:firebase-firestore:23.0.1'
+    //multidex
+    implementation 'com.android.support:multidex:1.0.3'
+    //FirebaseUI for Cloud Firestore
+    implementation 'com.firebaseui:firebase-ui-firestore:6.2.0'
+    //Firebase Cloud messaging
+    implementation 'com.google.firebase:firebase-messaging:22.0.0'
+    //volley
+    implementation 'com.android.volley:volley:1.2.0'
+    //material ripple
+    implementation 'com.balysv:material-ripple:1.0.2'
+    //firebase adMob
+    implementation 'com.google.android.gms:play-services-ads:20.2.0'
+
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'com.android.support:multidex:1.0.3'
+    //country key picker
+    implementation 'com.github.joielechong:countrycodepicker:2.4.2'
+
+
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+}

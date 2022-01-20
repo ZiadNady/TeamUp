@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#87A7CA</color>
+    <color name="colorPrimaryDark">#87A7CA</color>
+    <color name="colorAccent">#87A7CA</color>
+    <color name="liked">#2AB0B9</color>
+    <color name="white">#FFF</color>
+    <color name="next">#50A3BB</color>
+    <color name="back">#FA4616</color>
+    <color name="green">#4CA64C</color>
+    <color name="yellow">#FFFF66</color>
+    <color name="Buttons">#68B3E7</color>
+    <color name="post_color">#CCE5CC</color>
+
+</resources>

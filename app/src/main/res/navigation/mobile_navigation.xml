@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.aboelnour.teamup.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home"/>
+
+    <fragment
+        android:id="@+id/nav_myProjects"
+        android:name="com.aboelnour.teamup.ui.myPosts.MyProjectsFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_my_projects">
+        <deepLink
+            android:id="@+id/deepLink"
+            android:autoVerify="true"
+            app:uri="teamUp.page.link" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_likedPosts"
+        android:name="com.aboelnour.teamup.ui.likedPosts.likedPosts"
+        android:label="@string/menu_likes"
+        tools:layout="@layout/fragment_liked_posts" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.aboelnour.teamup.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="com.aboelnour.teamup.ui.UserSittings.UserSittingsFragment"
+        android:label="@string/menu_tools"
+        tools:layout="@layout/fragment_user_sittings"/>
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.aboelnour.teamup.ui.add_your_project.AddYourProjectFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/content_project_page1" />
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="com.aboelnour.teamup.ui.Logout.LogoutFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_send" />
+</navigation>
